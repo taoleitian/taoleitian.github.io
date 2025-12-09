@@ -8,6 +8,16 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  
+  <style>
+    /* 保证论文图片等高且不变形 */
+    .paper-img {
+      height: 100px;
+      width: auto;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  </style>
 </head>
 
 <body>
@@ -45,7 +55,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="image/gold_gate_tlt.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="image/gold_gate_tlt.jpg" class="hoverZoomLink"></a>
+              <a href="image/gold_gate_tlt.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="image/tlt.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -66,219 +76,170 @@
         </tbody></table>
 
         <!-- ===================== -->
-<!--      PREPRINTS        -->
-<!-- ===================== -->
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-    <td style="padding:20px;width:100%;vertical-align:middle">
-      <heading>Preprints</heading>
-    </td>
-  </tr>
-</tbody></table>
+        <!--      PREPRINTS        -->
+        <!-- ===================== -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Preprints</heading>
+            </td>
+          </tr>
+        </tbody></table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-  <!-- Hybrid Reinforcement -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Hybrid Reinforcement
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Ilia Kulikov, Swarnadeep Saha, Tianlu Wang, Jing Xu, Yixuan Li, Jason Weston, Ping Yu
-      <br>
-      <em>Preprint</em>
-      <br>
-    </td>
-  </tr>
+          <!-- Hybrid Reinforcement -->
+          <tr> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/hero.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Ilia Kulikov, Swarnadeep Saha, Tianlu Wang, Jing Xu, Yixuan Li, Jason Weston, Ping Yu
+              <br>
+              <em>Preprint</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- RL from Conversations -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        RL from User Conversations
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>The Era of Real-World Human Interaction: RL from User Conversations</papertitle>
-      <br>
-      Chuanyang Jin, Jing Xu, Bo Liu, <strong>Leitian Tao</strong>, Olga Golovneva, Tianmin Shu, Wenting Zhao, Xian Li, Jason Weston
-      <br>
-      <em>Preprint</em>
-      <br>
-    </td>
-  </tr>
+          <!-- RL from Conversations -->
+          <tr> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/era.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>The Era of Real-World Human Interaction: RL from User Conversations</papertitle>
+              <br>
+              Chuanyang Jin, Jing Xu, Bo Liu, <strong>Leitian Tao</strong>, Olga Golovneva, Tianmin Shu, Wenting Zhao, Xian Li, Jason Weston
+              <br>
+              <em>Preprint</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- RESTRAIN -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Self-Driven RL
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>RESTRAIN: From Spurious Votes to Signals -- Self-Driven RL with Self-Penalization</papertitle>
-      <br>
-      Zhaoning Yu, Will Su, <strong>Leitian Tao</strong>, Haozhu Wang, Aashu Singh, Hanchao Yu, Jianyu Wang, Hongyang Gao, Weizhe Yuan, Jason Weston, Ping Yu, Jing Xu
-      <br>
-      <em>Preprint</em>
-      <br>
-    </td>
-  </tr>
+          <!-- RESTRAIN -->
+          <tr> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/restrain.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>RESTRAIN: From Spurious Votes to Signals -- Self-Driven RL with Self-Penalization</papertitle>
+              <br>
+              Zhaoning Yu, Will Su, <strong>Leitian Tao</strong>, Haozhu Wang, Aashu Singh, Hanchao Yu, Jianyu Wang, Hongyang Gao, Weizhe Yuan, Jason Weston, Ping Yu, Jing Xu
+              <br>
+              <em>Preprint</em>
+              <br>
+            </td>
+          </tr>
 
-</tbody></table>
+        </tbody></table>
 
 
-<!-- ===================== -->
-<!--     PUBLICATIONS      -->
-<!-- ===================== -->
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-    <td style="padding:20px;width:100%;vertical-align:middle">
-      <heading>Publications</heading>
-    </td>
-  </tr>
-</tbody></table>
+        <!-- ===================== -->
+        <!--     PUBLICATIONS      -->
+        <!-- ===================== -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </tbody></table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-  <!-- NeurIPS 2025 -->
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Latent Space Synthesis
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Limited Preference Data? Learning Better Reward Model with Latent Space Synthesis</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Xuefeng Du, Yixuan Li
-      <br>
-      <em>NeurIPS 2025</em>
-      <br>
-    </td>
-  </tr>
+          <!-- NeurIPS LENS -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/lens.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Limited Preference Data? Learning Better Reward Model with Latent Space Synthesis</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Xuefeng Du, Yixuan Li
+              <br>
+              <em>NeurIPS 2025</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- ICLR 2025 -->
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Weak-to-Strong Alignment
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Your Weak LLM is Secretly a Strong Teacher for Alignment</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Yixuan Li
-      <br>
-      <em>ICLR 2025</em>
-      <br>
-    </td>
-  </tr>
+          <!-- Weak2Strong -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/weak2strong.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Your Weak LLM is Secretly a Strong Teacher for Alignment</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Yixuan Li
+              <br>
+              <em>ICLR 2025</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- TMLR CodeLutra -->
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        CodeLutra
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>CodeLutra: Boosting LLM Code Generation via Preference-Guided Refinement</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Xiang Chen, Tong Yu, Tung Mai, Ryan Rossi, Yixuan Li, Saayan Mitra
-      <br>
-      <em>Transactions on Machine Learning Research (TMLR)</em>
-      <br>
-    </td>
-  </tr>
+          <!-- CodeLutra -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/codelutra.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>CodeLutra: Boosting LLM Code Generation via Preference-Guided Refinement</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Xiang Chen, Tong Yu, Tung Mai, Ryan Rossi, Yixuan Li, Saayan Mitra
+              <br>
+              <em>TMLR</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- ICLR 2023 -->
-  <tr>
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <a href="image/npos.png"><img src="image/npos.png" alt="npos" width="256" height="80"></a>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Non-parametric Outlier Synthesis</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Xuefeng Du, Xiaojin Zhu, Yixuan Li
-      <br>
-      <em>ICLR 2023</em>
-      <br>
-      <a href="https://openreview.net/forum?id=JHklpEZqduQ">[Link]</a>
-    </td>
-  </tr>
+          <!-- ICLR 2023 NPOS -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/npos.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Non-parametric Outlier Synthesis</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Xuefeng Du, Xiaojin Zhu, Yixuan Li
+              <br>
+              <em>ICLR 2023</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- TIP -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <a href="image/PCL.png"><img src="image/PCL.png" alt="pcl" width="256" height="160"></a>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Predicate Correlation Learning for Scene Graph Generation</papertitle>
-      <br>
-      <strong>Leitian Tao</strong>, Li Mi, Nannan Li, Xianhang Cheng, Yaosi Hu, Zhenzhong Chen
-      <br>
-      <em>IEEE Transactions on Image Processing (TIP)</em>
-      <br>
-      <a href="https://ieeexplore.ieee.org/document/9796007">[Link]</a>
-    </td>
-  </tr>
+          <!-- TIP PCL -->
+          <tr> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/PCL.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Predicate Correlation Learning for Scene Graph Generation</papertitle>
+              <br>
+              <strong>Leitian Tao</strong>, Li Mi, Nannan Li, Xianhang Cheng, Yaosi Hu, Zhenzhong Chen
+              <br>
+              <em>IEEE TIP</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- ICCV 2023 -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:160px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Safe Domain Generalization
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Activate and Reject: Safe Domain Generalization under Category Shift</papertitle>
-      <br>
-      Chaoqi Chen, Luyao Tang, <strong>Leitian Tao</strong>, Hong-Yu Zhou, Yue Huang, Xiaoguang Han, Yizhou Yu
-      <br>
-      <em>ICCV 2023</em>
-      <br>
-    </td>
-  </tr>
+          <!-- ICCV PFAN -->
+          <tr> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="image/PFAN.png" class="paper-img">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Activate and Reject: Safe Domain Generalization under Category Shift</papertitle>
+              <br>
+              Chaoqi Chen, Luyao Tang, <strong>Leitian Tao</strong>, Hong-Yu Zhou, Yue Huang, Xiaoguang Han, Yizhou Yu
+              <br>
+              <em>ICCV 2023</em>
+              <br>
+            </td>
+          </tr>
 
-  <!-- ICML Position -->
-  <tr> 
-    <td style="padding:20px;width:25%;vertical-align:middle">
-      <div style="width:256px;height:80px;background-color:#f0f0f0;
-                  display:flex;align-items:center;justify-content:center;
-                  font-size:14px;color:#666;">
-        Data-Centric Alignment
-      </div>
-    </td>
-    <td width="75%" valign="middle">
-      <papertitle>Position: Challenges and Future Directions of Data-Centric AI Alignment</papertitle>
-      <br>
-      Min-Hsuan Yeh, Jeffrey Wang, Xuefeng Du, Seongheon Park, <strong>Leitian Tao</strong>, Shawn Im, Yixuan Li
-      <br>
-      <em>ICML 2025 (Position Paper)</em>
-      <br>
-    </td>
-  </tr>
-
-</tbody></table>
+        </tbody></table>
 
 
         <!-- Academic Service -->
