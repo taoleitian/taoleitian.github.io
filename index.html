@@ -10,12 +10,25 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   
   <style>
-    /* 保证论文图片等高且不变形 */
+    /* 论文配图，统一宽度，保持比例 */
     .paper-img {
       height: auto;
       width: 300px;
       border-radius: 6px;
       object-fit: contain;
+    }
+    details {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+    details summary {
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    pre.bibtex {
+      font-size: 0.8em;
+      white-space: pre;
+      overflow-x: auto;
     }
   </style>
 </head>
@@ -96,10 +109,20 @@
             <td width="75%" valign="middle">
               <papertitle>Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense</papertitle>
               <br>
-              <strong>Leitian Tao</strong>, Ilia Kulikov, Swarnadeep Saha, Tianlu Wang, Jing Xu, Yixuan Li, Jason Weston, Ping Yu
+              <strong>Leitian Tao</strong>, Ilia Kulikov, Swarnadeep Saha, Tianlu Wang, Jing Xu, Sharon Li, Yixuan Li, Jason Weston, Ping Yu
               <br>
               <em>Preprint</em>
               <br>
+              <a href="https://arxiv.org/abs/2510.07242" target="_blank">[arXiv]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@article{tao2025hybrid,
+  title   = {Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense},
+  author  = {Tao, Leitian and Kulikov, Ilia and Saha, Swarnadeep and Wang, Tianlu and Xu, Jing and Li, Sharon and Li, Yixuan and Weston, Jason E. and Yu, Ping},
+  journal = {arXiv preprint arXiv:2510.07242},
+  year    = {2025}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -115,6 +138,16 @@
               <br>
               <em>Preprint</em>
               <br>
+              <a href="https://arxiv.org/abs/2509.25137" target="_blank">[arXiv]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@article{jin2025era,
+  title   = {The Era of Real-World Human Interaction: RL from User Conversations},
+  author  = {Jin, Chuanyang and Xu, Jing and Liu, Bo and Tao, Leitian and Golovneva, Olga and Shu, Tianmin and Zhao, Wenting and Li, Xian and Weston, Jason},
+  journal = {arXiv preprint arXiv:2509.25137},
+  year    = {2025}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -130,6 +163,16 @@
               <br>
               <em>Preprint</em>
               <br>
+              <a href="https://arxiv.org/abs/2510.02172" target="_blank">[arXiv]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@article{yu2025restrain,
+  title   = {RESTRAIN: From Spurious Votes to Signals -- Self-Driven RL with Self-Penalization},
+  author  = {Yu, Zhaoning and Su, Will and Tao, Leitian and Wang, Haozhu and Singh, Aashu and Yu, Hanchao and Wang, Jianyu and Gao, Hongyang and Yuan, Weizhe and Weston, Jason and Yu, Ping and Xu, Jing},
+  journal = {arXiv preprint arXiv:2510.02172},
+  year    = {2025}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -157,10 +200,23 @@
             <td width="75%" valign="middle">
               <papertitle>Limited Preference Data? Learning Better Reward Model with Latent Space Synthesis</papertitle>
               <br>
-              <strong>Leitian Tao</strong>, Xuefeng Du, Yixuan Li
+              <strong>Leitian Tao</strong>, Xuefeng Du, Sharon Li
               <br>
               <em>NeurIPS 2025</em>
               <br>
+              <a href="https://arxiv.org/abs/2509.26074" target="_blank">[arXiv]</a>
+              &nbsp;
+              <a href="https://openreview.net/forum?id=dbaYQyruY2" target="_blank">[OpenReview]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@inproceedings{tao2025limited,
+  title     = {Limited Preference Data? Learning Better Reward Model with Latent Space Synthesis},
+  author    = {Tao, Leitian and Du, Xuefeng and Li, Sharon},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  note      = {arXiv:2509.26074}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -176,6 +232,19 @@
               <br>
               <em>ICLR 2025</em>
               <br>
+              <a href="https://arxiv.org/abs/2409.08813" target="_blank">[arXiv]</a>
+              &nbsp;
+              <a href="https://openreview.net/forum?id=sGqd1tF8P8" target="_blank">[OpenReview]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@inproceedings{tao2025weak,
+  title     = {Your Weak LLM is Secretly a Strong Teacher for Alignment},
+  author    = {Tao, Leitian and Li, Yixuan},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  note      = {arXiv:2409.08813}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -189,8 +258,21 @@
               <br>
               <strong>Leitian Tao</strong>, Xiang Chen, Tong Yu, Tung Mai, Ryan Rossi, Yixuan Li, Saayan Mitra
               <br>
-              <em>TMLR</em>
+              <em>Transactions on Machine Learning Research (TMLR)</em>
               <br>
+              <a href="https://arxiv.org/abs/2411.05199" target="_blank">[arXiv]</a>
+              &nbsp;
+              <a href="https://openreview.net/forum?id=IGsEgWM4to" target="_blank">[TMLR page]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@article{tao2025codelutra,
+  title   = {CodeLutra: Boosting LLM Code Generation via Preference-Guided Refinement},
+  author  = {Tao, Leitian and Chen, Xiang and Yu, Tong and Mai, Tung and Rossi, Ryan A. and Li, Yixuan and Mitra, Saayan},
+  journal = {Transactions on Machine Learning Research (TMLR)},
+  year    = {2025},
+  note    = {arXiv:2411.05199}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -206,6 +288,19 @@
               <br>
               <em>ICLR 2023</em>
               <br>
+              <a href="https://arxiv.org/abs/2303.02966" target="_blank">[arXiv]</a>
+              &nbsp;
+              <a href="https://openreview.net/forum?id=JHklpEZqduQ" target="_blank">[OpenReview]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@inproceedings{tao2023non,
+  title     = {Non-Parametric Outlier Synthesis},
+  author    = {Tao, Leitian and Du, Xuefeng and Zhu, Xiaojin and Li, Yixuan},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2023},
+  note      = {arXiv:2303.02966}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -219,8 +314,22 @@
               <br>
               <strong>Leitian Tao</strong>, Li Mi, Nannan Li, Xianhang Cheng, Yaosi Hu, Zhenzhong Chen
               <br>
-              <em>IEEE TIP</em>
+              <em>IEEE Transactions on Image Processing (TIP)</em>
               <br>
+              <a href="https://ieeexplore.ieee.org/document/9796007" target="_blank">[IEEE]</a>
+              &nbsp;
+              <a href="https://arxiv.org/abs/2107.02713" target="_blank">[arXiv]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@article{tao2022predicate,
+  title   = {Predicate Correlation Learning for Scene Graph Generation},
+  author  = {Tao, Leitian and Mi, Li and Li, Nannan and Cheng, Xianhang and Hu, Yaosi and Chen, Zhenzhong},
+  journal = {IEEE Transactions on Image Processing},
+  volume  = {31},
+  pages   = {4173--4185},
+  year    = {2022}
+}</pre>
+              </details>
             </td>
           </tr>
 
@@ -230,12 +339,24 @@
               <img src="image/PFAN.png" class="paper-img">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>Activate and Reject: Safe Domain Generalization under Category Shift</papertitle>
+              <papertitle>Activate and Reject: Towards Safe Domain Generalization under Category Shift</papertitle>
               <br>
               Chaoqi Chen, Luyao Tang, <strong>Leitian Tao</strong>, Hong-Yu Zhou, Yue Huang, Xiaoguang Han, Yizhou Yu
               <br>
               <em>ICCV 2023</em>
               <br>
+              <a href="https://arxiv.org/abs/2310.04724" target="_blank">[arXiv]</a>
+              &nbsp;
+              <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_Activate_and_Reject_Towards_Safe_Domain_Generalization_under_Category_Shift_ICCV_2023_paper.pdf" target="_blank">[PDF]</a>
+              <details>
+                <summary>[BibTeX]</summary>
+                <pre class="bibtex">@inproceedings{chen2023activate,
+  title     = {Activate and Reject: Towards Safe Domain Generalization under Category Shift},
+  author    = {Chen, Chaoqi and Tang, Luyao and Tao, Leitian and Zhou, Hong-Yu and Huang, Yue and Han, Xiaoguang and Yu, Yizhou},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2023}
+}</pre>
+              </details>
             </td>
           </tr>
 
