@@ -12,6 +12,12 @@
     .paper-img { display: block; height: auto; width: 100%; max-width: 400px; margin: 0 auto; border-radius: 6px; object-fit: contain; }
     .publication-media { box-sizing: border-box; padding: 16px 8px; width: 42%; vertical-align: middle; text-align: center; }
     .publication-details { box-sizing: border-box; padding: 16px 20px 16px 8px; width: 58%; vertical-align: middle; overflow-wrap: anywhere; }
+    .experience-item { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 14px; align-items: center; }
+    .experience-logo { display: flex; width: 56px; height: 56px; align-items: center; justify-content: center; }
+    .experience-logo img { display: block; width: auto; height: auto; max-width: 48px; max-height: 48px; object-fit: contain; }
+    .experience-logo--meta img { width: 44px; }
+    .experience-logo--shanghai img { max-width: 56px; max-height: 48px; }
+    .experience-content { min-width: 0; overflow-wrap: anywhere; }
     details { margin-top: 0; margin-bottom: 0; display: inline; }
     details summary { cursor: pointer; font-size: 0.9em; display: inline; }
     pre.bibtex { font-size: 0.8em; white-space: pre-wrap; word-break: break-word; max-width: 100%; overflow-x: auto; }
@@ -31,6 +37,11 @@
       .publication-media:empty { display: none; }
       .publication-details { padding: 6px 20px 20px; }
       .paper-img { max-width: 360px; }
+      .experience-item { grid-template-columns: 44px minmax(0, 1fr); gap: 10px; }
+      .experience-logo { width: 40px; height: 40px; }
+      .experience-logo img { max-width: 36px; max-height: 36px; }
+      .experience-logo--meta img { width: 36px; }
+      .experience-logo--shanghai img { max-width: 40px; max-height: 36px; }
     }
   </style>
 </head>
@@ -81,30 +92,58 @@
               </tr>
               <tr>
                 <td style="padding:0px 20px 15px 20px;width:100%;vertical-align:middle">
-                  <papertitle>Microsoft Research</papertitle> — Research Intern<br>
-                  <em>Feb 2026 – Present · Redmond, WA</em><br>
-                  Mentors: Dr. Baolin Peng and Dr. Jianfeng Gao. Research on agentic RL and coding-agent self-reflection for scaling.
+                  <div class="experience-item">
+                    <a class="experience-logo" href="https://www.microsoft.com/en-us/research/" aria-label="Microsoft Research">
+                      <img src="image/logos/microsoft.svg" alt="Microsoft logo" loading="lazy" decoding="async">
+                    </a>
+                    <div class="experience-content">
+                      <papertitle>Microsoft Research</papertitle> — Research Intern<br>
+                      <em>Feb 2026 – Present · Redmond, WA</em><br>
+                      Mentors: Dr. Baolin Peng and Dr. Jianfeng Gao. Research on agentic RL and coding-agent self-reflection for scaling.
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td style="padding:0px 20px 15px 20px;width:100%;vertical-align:middle">
-                  <papertitle>Meta (Facebook AI Research)</papertitle> — Research Scientist Intern<br>
-                  <em>May 2025 – Dec 2025 · Bellevue, WA</em><br>
-                  Mentors: Dr. Ping Yu and Dr. Jason Weston. Research on improving LLM reasoning beyond binary verifiable rewards.
+                  <div class="experience-item">
+                    <a class="experience-logo experience-logo--meta" href="https://ai.meta.com/research/" aria-label="Meta FAIR">
+                      <img src="image/logos/meta.svg" alt="Meta logo" loading="lazy" decoding="async">
+                    </a>
+                    <div class="experience-content">
+                      <papertitle>Meta (Facebook AI Research)</papertitle> — Research Scientist Intern<br>
+                      <em>May 2025 – Dec 2025 · Bellevue, WA</em><br>
+                      Mentors: Dr. Ping Yu and Dr. Jason Weston. Research on improving LLM reasoning beyond binary verifiable rewards.
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td style="padding:0px 20px 15px 20px;width:100%;vertical-align:middle">
-                  <papertitle>Adobe Research</papertitle> — Research Scientist Intern<br>
-                  <em>May 2024 – Dec 2024 · San Jose, CA</em><br>
-                  Mentors: Dr. Xiang Chen and Dr. Tong Yu. Developed <strong>CodeLutra</strong>, a preference-learning framework that improves code generation using success and failure signals.
+                  <div class="experience-item">
+                    <a class="experience-logo" href="https://research.adobe.com/" aria-label="Adobe Research">
+                      <img src="image/logos/adobe.png" alt="Adobe logo" loading="lazy" decoding="async">
+                    </a>
+                    <div class="experience-content">
+                      <papertitle>Adobe Research</papertitle> — Research Scientist Intern<br>
+                      <em>May 2024 – Dec 2024 · San Jose, CA</em><br>
+                      Mentors: Dr. Xiang Chen and Dr. Tong Yu. Developed <strong>CodeLutra</strong>, a preference-learning framework that improves code generation using success and failure signals.
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-                  <papertitle>Shanghai AI Lab</papertitle> — Research Intern<br>
-                  <em>Oct 2022 – Mar 2023 · Shanghai, China</em><br>
-                  Mentor: Dr. Peng Gao. Studied fine-tuning methods for multimodal model alignment.
+                  <div class="experience-item">
+                    <a class="experience-logo experience-logo--shanghai" href="https://www.shlab.org.cn/" aria-label="Shanghai AI Lab">
+                      <img src="image/logos/shanghai-ai-lab.svg" alt="Shanghai AI Lab logo" loading="lazy" decoding="async">
+                    </a>
+                    <div class="experience-content">
+                      <papertitle>Shanghai AI Lab</papertitle> — Research Intern<br>
+                      <em>Oct 2022 – Mar 2023 · Shanghai, China</em><br>
+                      Mentor: Dr. Peng Gao. Studied fine-tuning methods for multimodal model alignment.
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
