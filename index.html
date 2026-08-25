@@ -8,11 +8,30 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <style>
-    .paper-img { height: auto; width: 300px; border-radius: 6px; object-fit: contain; }
+    .profile-table { table-layout: fixed; }
+    .paper-img { display: block; height: auto; width: 100%; max-width: 300px; margin: 0 auto; border-radius: 6px; object-fit: contain; }
+    .publication-media { box-sizing: border-box; padding: 20px; width: 25%; vertical-align: middle; text-align: center; }
+    .publication-details { width: 75%; vertical-align: middle; overflow-wrap: anywhere; }
     details { margin-top: 0; margin-bottom: 0; display: inline; }
     details summary { cursor: pointer; font-size: 0.9em; display: inline; }
     pre.bibtex { font-size: 0.8em; white-space: pre-wrap; word-break: break-word; max-width: 100%; overflow-x: auto; }
     .highlight { background-color: transparent; font-weight: 600; }
+
+    @media (max-width: 640px) {
+      .profile-row { display: flex; flex-direction: column; }
+      .profile-info, .profile-photo { display: block; box-sizing: border-box; width: 100% !important; max-width: 100% !important; }
+      .profile-photo { order: -1; padding: 20px 20px 0 !important; text-align: center; }
+      .profile-photo img { width: min(48vw, 180px) !important; }
+      .profile-info { padding: 20px !important; }
+      .publication-table, .publication-table > tbody { display: block; width: 100%; }
+      .publication-table > tbody > tr:not(.publication-row), .publication-table > tbody > tr:not(.publication-row) > td { display: block; box-sizing: border-box; width: 100% !important; }
+      .publication-row { display: flex; flex-direction: column; width: 100%; }
+      .publication-media, .publication-details { display: block; box-sizing: border-box; width: 100% !important; }
+      .publication-media { padding: 12px 20px 6px; }
+      .publication-media:empty { display: none; }
+      .publication-details { padding: 6px 20px 20px; }
+      .paper-img { max-width: 300px; }
+    }
   </style>
 </head>
 
@@ -22,13 +41,13 @@
       <tr style="padding:0px">
         <td style="padding:0px">
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="profile-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <tr class="profile-row" style="padding:0px">
+                <td class="profile-info" style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center"><name>Leitian Tao</name></p>
                   <p>I am a Ph.D. student in the <a href="https://www.cs.wisc.edu/">Computer Sciences Department</a> at the <a href="https://www.wisc.edu/">University of Wisconsin–Madison</a>, advised by <a href="https://pages.cs.wisc.edu/~sharonli/">Prof. Sharon Li</a>. My research focuses on <strong>post-training for agentic systems and reasoning tasks</strong>.</p>
-                  <p>I am currently a Research Intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, working with Dr. Baolin Peng and Dr. Jianfeng Gao on agentic reinforcement learning and coding-agent self-reflection for scaling.</p>
+                  <p>I am currently a Research Intern at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a>, working with Dr. Baolin Peng and Dr. Jianfeng Gao on agentic reinforcement learning and coding-agent self-reflection for scaling. Previously, I was a Research Scientist Intern at <a href="https://ai.meta.com/research/">Meta FAIR</a> with Dr. Ping Yu and Dr. Jason Weston, studying how to improve LLM reasoning beyond binary verifiable rewards, and at <a href="https://research.adobe.com/">Adobe Research</a> with Dr. Xiang Chen and Dr. Tong Yu, where I developed <strong>CodeLutra</strong>, a preference-learning framework for code generation.</p>
                   <p style="text-align:center">
                     <a href="mailto:leitiantao@cs.wisc.edu">Email</a> &nbsp;/&nbsp;
                     <a href="https://scholar.google.com/citations?user=F5S6V6sAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
@@ -37,8 +56,8 @@
                     <a href="Leitian_Tao_UW_Madison.pdf" target="_blank">CV</a>
                   </p>
                 </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="image/gold_gate_tlt.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="image/tlt.jpeg"></a>
+                <td class="profile-photo" style="padding:2.5%;width:37%;max-width:37%">
+                  <a href="image/gold_gate_tlt.jpg"><img style="width:100%;max-width:100%;height:auto" alt="Leitian Tao" src="image/tlt.jpeg" decoding="async"></a>
                 </td>
               </tr>
             </tbody>
@@ -91,28 +110,28 @@
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr><td colspan="2" style="padding:20px;width:100%;vertical-align:middle"><heading>Preprints</heading></td></tr>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
-                  <papertitle>Executable Verification Is All You Need for the Self-Improvement Agentic Loop</papertitle><br>
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/execcritic.png" class="paper-img" alt="ExecCritic paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
+                  <papertitle>ExecCritic: Learn to Test, Test to Improve</papertitle><br>
                   <strong>Leitian Tao</strong>, et al.<br>
                   <em>Ongoing</em>
                 </td>
               </tr>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"></td>
+                <td class="publication-details">
                   <papertitle>TRACE: Turn-Level Reward Assignment via Credit Estimation for Long-Horizon Agents</papertitle><br>
                   <strong>Leitian Tao</strong>, Baolin Peng, Wenlin Yao, Tao Ge, Hao Cheng, Mike Hang Wang, Jianfeng Gao, Sharon Li<br>
                   <em>Preprint</em>
                 </td>
               </tr>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/era.png" class="paper-img" alt="The Era of Real-World Human Interaction paper"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/era.png" class="paper-img" alt="The Era of Real-World Human Interaction paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>The Era of Real-World Human Interaction: RL from User Conversations</papertitle><br>
                   Chuanyang Jin, Jing Xu, Bo Liu, <strong>Leitian Tao</strong>, Olga Golovneva, Tianmin Shu, Wenting Zhao, Xian Li, Jason Weston<br>
                   <em>Preprint, 2025</em><br>
@@ -122,13 +141,13 @@
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="publication-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr><td colspan="2" style="padding:20px;width:100%;vertical-align:middle"><heading>Publications</heading></td></tr>
 
-              <tr class="highlight">
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/hero.png" class="paper-img" alt="Hybrid Reinforcement paper"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row highlight">
+                <td class="publication-media"><img src="image/hero.png" class="paper-img" alt="Hybrid Reinforcement paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Hybrid Reinforcement: When Reward Is Sparse, It's Better to Be Dense</papertitle><br>
                   <strong>Leitian Tao</strong>, Ilia Kulikov, Swarnadeep Saha, Tianlu Wang, Jing Xu, Yixuan Li, Jason Weston, Ping Yu<br>
                   <em>ICLR 2026</em><br>
@@ -145,9 +164,9 @@
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/restrain.png" class="paper-img" alt="RESTRAIN paper"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/restrain.png" class="paper-img" alt="RESTRAIN paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>RESTRAIN: From Spurious Votes to Signals -- Self-Driven RL with Self-Penalization</papertitle><br>
                   Zhaoning Yu, Will Su, <strong>Leitian Tao</strong>, Haozhu Wang, Aashu Singh, Hanchao Yu, Jianyu Wang, Hongyang Gao, Weizhe Yuan, Jason Weston, Ping Yu, Jing Xu<br>
                   <em>ICLR 2026</em><br>
@@ -164,9 +183,9 @@
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="image/lens.png" class="paper-img" alt="Latent Space Synthesis paper"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/lens.png" class="paper-img" alt="Latent Space Synthesis paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Limited Preference Data? Learning Better Reward Model with Latent Space Synthesis</papertitle><br>
                   <strong>Leitian Tao</strong>, Xuefeng Du, Yixuan Li<br>
                   <em>NeurIPS 2025</em><br>
@@ -174,54 +193,54 @@
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/weak2strong.png" class="paper-img" alt="Weak-to-strong alignment paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Your Weak LLM is Secretly a Strong Teacher for Alignment</papertitle><br>
                   <strong>Leitian Tao</strong>, Yixuan Li<br>
                   <em>ICLR 2025</em>
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/codelutra.png" class="paper-img" alt="CodeLutra paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>CodeLutra: Boosting LLM Code Generation via Preference-Guided Refinement</papertitle><br>
                   <strong>Leitian Tao</strong>, Xiang Chen, Tong Yu, Tung Mai, Ryan Rossi, Yixuan Li, Saayan Mitra<br>
                   <em>TMLR 2025</em>
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/npos.png" class="paper-img" alt="Non-Parametric Outlier Synthesis paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Non-Parametric Outlier Synthesis</papertitle><br>
                   <strong>Leitian Tao</strong>, Xuefeng Du, Xiaojin Zhu, Yixuan Li<br>
                   <em>ICLR 2023</em>
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/PCL.png" class="paper-img" alt="Predicate Correlation Learning paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Predicate Correlation Learning for Scene Graph Generation</papertitle><br>
                   <strong>Leitian Tao</strong>, Li Mi, Nannan Li, Xianhang Cheng, Yaosi Hu, Zhenzhong Chen<br>
                   <em>IEEE TIP</em>
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/PFAN.png" class="paper-img" alt="Activate and Reject paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Activate and Reject: Safe Domain Generalization under Category Shift</papertitle><br>
                   Chaoqi Chen, Luyao Tang, <strong>Leitian Tao</strong>, Hong-Yu Zhou, Yue Huang, Xiaoguang Han, Yizhou Yu<br>
                   <em>ICCV 2023</em>
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"></td>
-                <td width="75%" valign="middle">
+              <tr class="publication-row">
+                <td class="publication-media"><img src="image/data_centric_alignment.png" class="paper-img" alt="Data-Centric AI Alignment paper preview" loading="lazy" decoding="async"></td>
+                <td class="publication-details">
                   <papertitle>Position: Challenges and Future Directions of Data-Centric AI Alignment</papertitle><br>
                   Min-Hsuan Yeh, Jeffrey Wang, Xuefeng Du, Seongheon Park, <strong>Leitian Tao</strong>, Shawn Im, Yixuan Li<br>
                   <em>ICML 2025</em>
@@ -235,7 +254,7 @@
               <tr>
                 <td style="padding:0px">
                   <br>
-                  <p style="text-align:right;font-size:small;">Template inspired by <a href="https://jonbarron.info/">Jon Barron</a>.<br>Last updated: July 2026</p>
+                  <p style="text-align:right;font-size:small;">Template inspired by <a href="https://jonbarron.info/">Jon Barron</a>.<br>Last updated: August 2026</p>
                 </td>
               </tr>
             </tbody>
