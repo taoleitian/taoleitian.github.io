@@ -9,9 +9,9 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <style>
     .profile-table { table-layout: fixed; }
-    .paper-img { display: block; height: auto; width: 100%; max-width: 300px; margin: 0 auto; border-radius: 6px; object-fit: contain; }
-    .publication-media { box-sizing: border-box; padding: 20px; width: 25%; vertical-align: middle; text-align: center; }
-    .publication-details { width: 75%; vertical-align: middle; overflow-wrap: anywhere; }
+    .paper-img { display: block; height: auto; width: 100%; max-width: 360px; margin: 0 auto; border-radius: 6px; object-fit: contain; }
+    .publication-media { box-sizing: border-box; padding: 16px 12px; width: 38%; vertical-align: middle; text-align: center; }
+    .publication-details { box-sizing: border-box; padding: 16px 20px 16px 8px; width: 62%; vertical-align: middle; overflow-wrap: anywhere; }
     details { margin-top: 0; margin-bottom: 0; display: inline; }
     details summary { cursor: pointer; font-size: 0.9em; display: inline; }
     pre.bibtex { font-size: 0.8em; white-space: pre-wrap; word-break: break-word; max-width: 100%; overflow-x: auto; }
@@ -27,10 +27,10 @@
       .publication-table > tbody > tr:not(.publication-row), .publication-table > tbody > tr:not(.publication-row) > td { display: block; box-sizing: border-box; width: 100% !important; }
       .publication-row { display: flex; flex-direction: column; width: 100%; }
       .publication-media, .publication-details { display: block; box-sizing: border-box; width: 100% !important; }
-      .publication-media { padding: 12px 20px 6px; }
+      .publication-media { padding: 12px 12px 6px; }
       .publication-media:empty { display: none; }
       .publication-details { padding: 6px 20px 20px; }
-      .paper-img { max-width: 300px; }
+      .paper-img { max-width: 360px; }
     }
   </style>
 </head>
@@ -117,16 +117,17 @@
                 <td class="publication-media"><img src="image/execcritic.png" class="paper-img" alt="ExecCritic paper preview" loading="lazy" decoding="async"></td>
                 <td class="publication-details">
                   <papertitle>ExecCritic: Learn to Test, Test to Improve</papertitle><br>
-                  <strong>Leitian Tao</strong>, et al.<br>
+                  <strong>Leitian Tao</strong>, Baolin Peng, Wenlin Yao, Tao Ge, Hao Cheng, Mike Hang Wang, Sharon Li, Jianfeng Gao<br>
                   <em>Ongoing</em>
                 </td>
               </tr>
               <tr class="publication-row">
-                <td class="publication-media"></td>
+                <td class="publication-media"><img src="image/trace.png" class="paper-img" alt="TRACE paper preview" loading="lazy" decoding="async"></td>
                 <td class="publication-details">
                   <papertitle>TRACE: Turn-Level Reward Assignment via Credit Estimation for Long-Horizon Agents</papertitle><br>
                   <strong>Leitian Tao</strong>, Baolin Peng, Wenlin Yao, Tao Ge, Hao Cheng, Mike Hang Wang, Jianfeng Gao, Sharon Li<br>
-                  <em>Preprint</em>
+                  <em>Preprint</em><br>
+                  <a href="https://arxiv.org/abs/2607.13988" target="_blank">[arXiv]</a>
                 </td>
               </tr>
               <tr class="publication-row">
